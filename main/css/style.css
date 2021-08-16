@@ -2,24 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 /* Fontawesome 4.7 */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* *{
+    padding: 0;
+    width: 0;
+    box-sizing: border-box;
+} */
 
 body{
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
+    padding: 0;
     color: #222;
-    font-weight: 300;
+    box-sizing: border-box;
+    /* font-weight: 300; */
 }
 a{
     color: #222;
     text-decoration: none;
 }
+
 h1,h2,h3,h4,h5,h6{
-    font-style: normal;
+    font-style: 100;
 }
+
 .sec3-title h1,
 .sec4-title h1,
 .sec5-title h1{
-    font-weight: 800;
+    font-weight: 500;
     text-align: center;
     color: #1ECAD3;
     font-size: 30px;
@@ -169,41 +180,29 @@ label[for=menu] span:nth-child(3){
     top: 100%;
 }
 .title{
-    position: absolute;
+    /* position: absolute; */
+    font-size: 50px;
+    /* font-weight: 100; */
     width: 100%;
-    top: 30%;
+    top: 50%;
     text-align: center;
     color: #fff;
     /* border: 1px solid #000; */
+    margin: 0;
+    padding: 0;
 }
-.title h5{
-    font-weight: 300;
-    font-size: 20px;
-    /* border: 1px solid #000; */
-    margin-bottom: 10px;
-}
-.title h5 strong{
-    font-size: 25px;
-}
-.title h3{
-    margin-top: 0;
-    padding-left: 70px;
-    font-size: 40px;
-    font-weight: 500;
 
+.top-title {
+    margin: 0 auto;
+    width: 500px;
+    font-weight: 400;
+    word-spacing:10px
 }
-.title h3 span{
-    display: inline-block;
-    width: 60px;
-    height: 50px;
-    border: 1px solid #fff;
-    margin-right: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    font-size: 40px;
-    text-align: center;
-    font-weight: 700;
-    color: #1ECAD3;
+
+.top-title-line {
+    margin: auto;
+    width: 480px;
+    border-bottom: 1px solid #fff;
 }
 
 /* section2_추천서비스 */
@@ -212,14 +211,22 @@ label[for=menu] span:nth-child(3){
     display: flex;
 }
 .sec2-header{
-    height: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
     background-color: #0AB0B8;
     color: #fff;
     text-align: center;
-    line-height: 80px;
+    line-height: 45px;
+    font-size: 16px;
+    z-index: 1;
+    word-spacing: 3px;
+    font-weight: 300;
 }
 .sec2-title{
-    margin: 5px;
+    /* margin: 5px; */
 }
 .sec2-header em{
     font-style: normal;
@@ -227,19 +234,20 @@ label[for=menu] span:nth-child(3){
     font-weight: 700;
 }
 .sec2-slider{
-    height: 90%;
-    box-sizing: border-box;
+    height: 100%;
 }
 
-.sec2-slider .img{
+.img{
+    position: relative;
     height: 100vh;
     overflow: hidden;
-    position: relative;
+    z-index: 3;
 }
-.sec2-slider .img img{
+
+.img img{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 300%;
+    /* height: 100%; */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -250,19 +258,19 @@ label[for=menu] span:nth-child(3){
 /* section3_캠핑장 정보 */
 .searchPage{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100%; */
 }
 .wrap-sec3{
-    width: 90%;
-    height: 80%;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%s;
+    /* height: 70px%; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     /* border: 1px solid #000; */
-    position: relative;
-    padding: 20px;
-    box-sizing: border-box;
+    /* position: relative; */
+    /* padding: 20px; */
+    /* box-sizing: border-box; */
 }
 
 .sec3-title span{
@@ -273,13 +281,13 @@ label[for=menu] span:nth-child(3){
 
 .sec3-contents{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 80%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 1100px;
+    height: 500px%;
     /* border: 1px solid blue; */
     box-sizing: border-box;
-    margin-top: 20px;
+    margin: 0 auto ;
 }
 .sec3-contents .more-view{
     /* border: 1px solid #000; */
